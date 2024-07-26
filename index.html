@@ -1,0 +1,180 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Hyperspace by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">Welcome</a></li>
+							<li><a href="#one">About Me</a></li>
+							
+							<li><a href="#three">Get in touch</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>Krishna Sharma</h1>
+							<p>A student with diverse skills and proven track record of success.<br>
+								Passionate about innovation and committed to delivering exceptional results.</p>
+							<ul class="actions">
+								<li><a href="#one" class="button scrolly">Learn more</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style2 spotlights">
+						<section>
+							<a href="#" class="image"><img src="images/X9WRfPEQ.jpg" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>PROJECTS & LEADERSHIP</h2>
+									<p>Demonstrated leadership in team-based projects, applying programming skills to solve real-world challenges and compete in tech festivals.</p>
+									<ul class="actions">
+										<li><a href="page1.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/CAo1zsxp.jpg" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>EXPERIENCE</h2>
+									<p>A collection of events and activities that shape one's understanding and expertise in a particular field or role.</p>
+									<ul class="actions">
+										<li><a href="page2.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/eGMRy3sb.jpg" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>EDUCATION & TECHNICAL SKILLS</h2>
+									<p>Education provides the theoretical framework, while technical skills enable the practical execution of complex tasks. Combined, they showcase a well-rounded expertise in both understanding and application.</p>
+									<ul class="actions">
+										<li><a href="page3.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</section>
+				<!-- Two -->
+					
+
+				<!-- Three -->
+					<section id="three" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Get in touch</h2>
+							<p>Please complete all fields to ensure we can respond to your inquiry.
+								For a faster response, describe as much relevant information as possible in the "Message" field.</p>
+							<div class="split style1">
+								<section>
+									<form id="contact-form">
+										<div>
+											<label for="name">Name:</label>
+											<input type="text" id="name" name="name" required>
+										</div>
+										<div>
+											<label for="email">Email:</label>
+											<input type="email" id="email" name="email" required>
+										</div>
+										<div>
+											<label for="message">Message:</label>
+											<textarea id="message" name="message" rows="5" required></textarea>
+										</div>
+										<button type="submit">Send Message</button>
+									</form>
+									</form>
+								</section>
+								<script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+								<script>
+									(function() {
+										emailjs.init("xSpXnLbvm0KemmkuF"); // Replace with your EmailJS user ID
+									})();
+							
+									document.getElementById('contact-form').addEventListener('submit', function(event) {
+										event.preventDefault();
+										
+										emailjs.sendForm('service_93u2dqj', 'template_juqjh4kw', this)
+											.then(function() {
+												console.log('SUCCESS!');
+												alert('Message sent successfully!');
+												document.getElementById('contact-form').reset();
+											}, function(error) {
+												console.log('FAILED...', error);
+												alert('Failed to send message. Please try again.');
+											});
+									});
+								</script>
+								
+
+
+								
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Email</h3>
+											<a href="mailto:ksharma7@rockets.utoledo.edu">ksharma7@rockets.utoledo.edu</a>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												
+												<li><a href="https://discordapp.com/users/dooddlee" class="icon brands fa-discord"><span class="label">Discord</span></a></li>
+												<li><a href="https://github.com/kriscodesAI" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="www.linkedin.com/in/krishna-sharma-939a57266" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+			
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			
+	</body>
+</html>
